@@ -19,6 +19,6 @@ public class JetPlane extends AirTransport{
     @Override
     public void FlyHeight() {
         super.FlyHeight();
-        System.out.println(" 5 - 11 км.");
+        System.out.println(" 1 - 11 км.\n");
     }
 }

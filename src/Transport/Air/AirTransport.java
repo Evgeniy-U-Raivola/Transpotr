@@ -1,7 +1,5 @@
 package Transport.Air;
-
 import Transport.Transport;
-
 public abstract class AirTransport extends Transport {
 
 //   конструкторы
