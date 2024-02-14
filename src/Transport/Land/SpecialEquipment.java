@@ -1,6 +1,9 @@
 package Transport.Land;
 
-public class SpecialEquipment extends LandTransport{
+import Transport.FyelType;
+import Transport.MilitaryUse;
+
+public class SpecialEquipment extends LandTransport implements MilitaryUse, FyelType {
 
     //     конструкторы
     public SpecialEquipment(){super();}
@@ -20,4 +23,15 @@ public class SpecialEquipment extends LandTransport{
     public void MaxSpeed() {
         super.MaxSpeed();
         System.out.println("до 110 км/ч"); }
+
+    @Override
+    public void MilitaryObject() {
+        System.out.println("спецтехника часто используется или создаётся для военных целей"); }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("как правило, солярка");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+    }
 }

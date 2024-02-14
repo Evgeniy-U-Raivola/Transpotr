@@ -1,6 +1,8 @@
 package Transport.Water;
 
-public class CargoShip extends WaterTransport{
+import Transport.FyelType;
+
+public class CargoShip extends WaterTransport implements FyelType {
 
     //     конструкторы
     public  CargoShip(){super();}
@@ -20,4 +22,10 @@ public class CargoShip extends WaterTransport{
     public void SwimmingAutonomy() {
         super.SwimmingAutonomy();
         System.out.print(" 30-60  для крупных судов");   }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("солярка");
+        System.out.println("*   *   *   *   *   *   *   *   *   *"); }
 }

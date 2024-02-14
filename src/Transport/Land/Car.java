@@ -1,6 +1,9 @@
 package Transport.Land;
 
-public class Car extends LandTransport{
+import Transport.FyelType;
+import Transport.PublicTransport;
+
+public class Car extends LandTransport implements PublicTransport, FyelType {
 
 //    конструкторы
     public Car(){super();}
@@ -20,4 +23,16 @@ public class Car extends LandTransport{
     public void MaxSpeed() {
         super.MaxSpeed();
         System.out.println("как правило, ограничена 250 км/ч, спортивные модификации до 350 км/ч"); }
+
+    @Override
+    public void PublicTransport() {
+        System.out.println("легковые машины созданы для перевозки пассажиров");
+    }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("бензин,солярка, электрические батареи");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+    }
 }

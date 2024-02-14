@@ -1,6 +1,10 @@
 package Transport.Air;
 
-public class JetPlane extends AirTransport{
+import Transport.FyelType;
+import Transport.MilitaryUse;
+import Transport.PublicTransport;
+
+public class JetPlane extends AirTransport implements MilitaryUse, PublicTransport, FyelType {
 
 //  конструкторы
      public JetPlane(){super();}
@@ -20,5 +24,20 @@ public class JetPlane extends AirTransport{
     public void FlyHeight() {
         super.FlyHeight();
         System.out.println(" 1 - 11 км.\n");
+    }
+
+    @Override
+    public void MilitaryObject() {
+        System.out.println("есть военные и гражданские модификации самолётов"); }
+
+    @Override
+    public void PublicTransport() {
+        System.out.println("пассажирские реактивные самолёты");  }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("авиационный керосин, электротяга, метан");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
     }
 }

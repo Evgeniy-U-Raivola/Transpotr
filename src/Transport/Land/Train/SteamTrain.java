@@ -1,6 +1,8 @@
 package Transport.Land.Train;
 
-public class SteamTrain extends TempTrain{
+import Transport.FyelType;
+
+public class SteamTrain extends TempTrain implements FyelType {
 
     //       конструкторы
     public SteamTrain(){super();}
@@ -23,4 +25,11 @@ public class SteamTrain extends TempTrain{
     public void MaxSpeed() {
         super.MaxSpeed();
         System.out.println("до 90 км/ч");  }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("уголь");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+    }
 }

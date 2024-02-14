@@ -1,6 +1,9 @@
 package Transport.Land;
 
-public class Truk extends LandTransport{
+import Transport.FyelType;
+import Transport.MilitaryUse;
+
+public class Truk extends LandTransport implements MilitaryUse, FyelType {
 
 //    конструкторы
     public Truk(){super(); }
@@ -19,4 +22,15 @@ public class Truk extends LandTransport{
     public void MaxSpeed() {
         super.MaxSpeed();
         System.out.println("до 120 км/ч"); }
+
+    @Override
+    public void MilitaryObject() {
+        System.out.println("грузовики часто используются для военных целей"); }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("солярка");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+    }
 }

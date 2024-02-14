@@ -1,6 +1,9 @@
 package Transport.Water;
 
-public class Icebreaker extends WaterTransport{
+import Transport.FyelType;
+import Transport.MilitaryUse;
+
+public class Icebreaker extends WaterTransport implements MilitaryUse, FyelType {
 
     //     конструкторы
     public  Icebreaker(){super();}
@@ -22,5 +25,16 @@ public class Icebreaker extends WaterTransport{
     public void SwimmingAutonomy() {
         super.SwimmingAutonomy();
         System.out.print(" до 365 , для атомных ледоколов  теоретически неограниченная");
+    }
+
+    @Override
+    public void MilitaryObject() {
+        System.out.println("d ХХI веке появиись военные модификалии ледоколов"); }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("солярка, атомная энергия");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
     }
 }

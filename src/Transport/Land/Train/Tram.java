@@ -1,6 +1,9 @@
 package Transport.Land.Train;
 
-public class Tram extends TempTrain {
+import Transport.FyelType;
+import Transport.PublicTransport;
+
+public class Tram extends TempTrain implements PublicTransport , FyelType {
 
 //       конструкторы
     public Tram (){super();}
@@ -22,4 +25,16 @@ public class Tram extends TempTrain {
     public void MaxSpeed() {
         super.MaxSpeed();
         System.out.println("до 60 км/ч в зависимости от инфраструктуры н/п"); }
+
+    @Override
+    public void PublicTransport() {
+        System.out.println("создан как электрическая модификация автобуса");
+    }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("электрический вид транспорта");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+    }
 }

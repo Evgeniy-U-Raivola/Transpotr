@@ -1,6 +1,9 @@
 package Transport.Air;
 
-public class Fighter extends AirTransport{
+import Transport.FyelType;
+import Transport.MilitaryUse;
+
+public class Fighter extends AirTransport implements MilitaryUse, FyelType {
 
 //   конструкторы
      public Fighter(){super();}
@@ -19,4 +22,14 @@ public class Fighter extends AirTransport{
     public void FlyHeight() {
         super.FlyHeight();
         System.out.println("0,1 -- 22 км \n"); }
+
+    @Override
+    public void MilitaryObject() {
+        System.out.println("используется исключительно в военных целях"); }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("авиационный керосин");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");  }
 }

@@ -1,6 +1,9 @@
 package Transport.Land;
 
-public class TrackedVehicles extends LandTransport{
+import Transport.FyelType;
+import Transport.MilitaryUse;
+
+public class TrackedVehicles extends LandTransport implements MilitaryUse, FyelType {
 
 //     конструкторы
         public TrackedVehicles(){super();}
@@ -20,4 +23,16 @@ public class TrackedVehicles extends LandTransport{
     public void MaxSpeed() {
         super.MaxSpeed();
         System.out.println("обычно не более 60-80 км/ч");  }
+
+    @Override
+    public void MilitaryObject() {
+        System.out.println("военная гусеничная техника - это танки, бтр, тягачи и всевозможные \n" +
+                " военные платформы армейского назначения"); }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("как правило, солярка");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+    }
 }

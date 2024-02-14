@@ -1,6 +1,9 @@
 package Transport.Water;
 
-public class WarShip extends WaterTransport{
+import Transport.FyelType;
+import Transport.MilitaryUse;
+
+public class WarShip extends WaterTransport implements MilitaryUse, FyelType {
 
     //     конструкторы
     public  WarShip(){super();}
@@ -22,6 +25,17 @@ public class WarShip extends WaterTransport{
     public void SwimmingAutonomy() {
         super.SwimmingAutonomy();
         System.out.print(" обычно  7 - 90, у атомных кораблей теоретически неограниченная  ");
+    }
+
+    @Override
+    public void MilitaryObject() {
+        System.out.println("этот класс содержит исключительно военные корабли"); }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("солярка, атомная энергия");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
     }
 }
 

@@ -1,6 +1,9 @@
 package Transport.Water;
 
-public class SteamShip extends WaterTransport{
+import Transport.FyelType;
+import Transport.PublicTransport;
+
+public class SteamShip extends WaterTransport implements PublicTransport, FyelType {
 
     //     конструкторы
     public  SteamShip(){super();}
@@ -21,4 +24,16 @@ public class SteamShip extends WaterTransport{
     public void SwimmingAutonomy() {
         super.SwimmingAutonomy();
         System.out.println("до  20-30 на крупном судне, зависит от веса загружаемого топлива."); }
+
+    @Override
+    public void PublicTransport() {
+        System.out.println("Иногда некоторые пароходы используются в туристических целях");
+    }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("уголь");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+    }
 }

@@ -1,6 +1,8 @@
 package Transport.Land;
 
-public class OtherLand extends LandTransport{
+import Transport.FyelType;
+
+public class OtherLand extends LandTransport implements FyelType {
 
     //     конструкторы
     public OtherLand(){super();}
@@ -22,5 +24,12 @@ public class OtherLand extends LandTransport{
     public void MaxSpeed() {
         super.MaxSpeed();
         System.out.println("Обычно, низкоскоростные, до 50  -- 60 км/ч");
+    }
+
+    @Override
+    public void FyelType() {
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
+        System.out.println("в основном альтернативные источники");
+        System.out.println("*   *   *   *   *   *   *   *   *   *");
     }
 }
