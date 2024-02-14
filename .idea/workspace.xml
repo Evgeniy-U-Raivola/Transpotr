@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="724135f7-8b01-45de-9952-800ed9e06fe4" name="Changes" comment="Added  some AirTransport classes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transport/Air/AirTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transport/Air/AirTransport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transport/Air/JetPlane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transport/Air/JetPlane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transport/Land/LandTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transport/Land/LandTransport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transport/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transport/Main.java" afterDir="false" />
+    <list default="true" id="724135f7-8b01-45de-9952-800ed9e06fe4" name="Changes" comment="Added  some changes + one class to LandTransport">
+      <change beforePath="$PROJECT_DIR$/src/Transport/Water/WaterTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transport/Water/WaterTransport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,28 @@
       <option name="project" value="LOCAL" />
       <updated>1706598243080</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added  some LandTransport classes&#10;and Train package classes">
+      <created>1706616423306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706616423306</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added  one class to AirTransport">
+      <created>1707369167395</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707369167395</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added  some changes + one class to LandTransport">
+      <created>1707383804761</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707383804761</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +105,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First creation Transport project" />
     <MESSAGE value="Added  some AirTransport classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added  some AirTransport classes" />
+    <MESSAGE value="Added  some LandTransport classes&#10;and Train package classes" />
+    <MESSAGE value="Added  one class to AirTransport" />
+    <MESSAGE value="Added  some changes + one class to LandTransport" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added  some changes + one class to LandTransport" />
   </component>
 </project>
